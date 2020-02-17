@@ -1,9 +1,4 @@
 
-@mixin displayFlex {
-  display: flex;
-  flex-direction: row;
-}
-
 
 .container {
   width: 65%;
@@ -15,41 +10,40 @@
   justify-content: space-between;
   height: 75px;
   align-items: center;
-  img {
+  .header_top_logo {
     width: 150px;
   }
   .nav_list {
     @include displayFlex;
     list-style: none;
     align-items: center;
-    img {
-      width: 40px;
-    }
-    li {
+  }
+  img {
+    width: 25px;
+  }
+  li {
     color: black;
     padding-left: 45px;
     font-family: 'Bree Serif', serif;
-      button {
-        padding: 10px;
-        border-radius: 10px;
-        border: 1px solid black;
-        background-color: white;
-      }
-    }
+  }
+  button {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: white;
   }
 }
-
 .header_bottom {
   @include displayFlex;
   padding-top: 90px;
   .header_bottom_text {
     display: flex;
     flex-direction: column;
-    h2 {
-      width: 90%;
-      font-size: 45px;
-      padding-bottom: 20px;
-    }
+  }
+  h2 {
+    width: 90%;
+    font-size: 45px;
+    padding-bottom: 20px;
   }
 }
 

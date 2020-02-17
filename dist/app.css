@@ -12,7 +12,7 @@
   align-items: center;
 }
 
-.flex img {
+.flex .header_top_logo {
   width: 150px;
 }
 
@@ -23,17 +23,17 @@
   align-items: center;
 }
 
-.flex .nav_list img {
-  width: 40px;
+.flex img {
+  width: 25px;
 }
 
-.flex .nav_list li {
+.flex li {
   color: black;
   padding-left: 45px;
   font-family: "Bree Serif", serif;
 }
 
-.flex .nav_list li button {
+.flex button {
   padding: 10px;
   border-radius: 10px;
   border: 1px solid black;
@@ -51,7 +51,7 @@
   flex-direction: column;
 }
 
-.header_bottom .header_bottom_text h2 {
+.header_bottom h2 {
   width: 90%;
   font-size: 45px;
   padding-bottom: 20px;
