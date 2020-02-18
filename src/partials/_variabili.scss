@@ -1,4 +1,33 @@
+
+
+@mixin boxAndFont {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Bree Serif', serif;
+}
+
+@mixin dimContainer {
+    width: 65%;
+    margin: 0 auto;
+}
+
+
+
+
+@mixin header_bottom_icon {
+  width: 30px;
+  padding-right: 10px;
+  vertical-align: sub;
+}
+
+
 @mixin displayFlex {
   display: flex;
   flex-direction: row;
 }
+
+
+
+//mediaquery
+$breackpoint: 1058px;

@@ -1,10 +1,9 @@
 
 
-.container {
-  width: 65%;
-  margin: 0 auto;
+img {
+  width: 25px;
 }
-.flex {
+.header_top {
   border-bottom: 1px solid #ccc9c9;
   @include displayFlex;
   justify-content: space-between;
@@ -13,18 +12,15 @@
   .header_top_logo {
     width: 150px;
   }
-  .nav_list {
-    @include displayFlex;
-    list-style: none;
-    align-items: center;
-  }
-  img {
-    width: 25px;
-  }
+
   li {
     color: black;
     padding-left: 45px;
     font-family: 'Bree Serif', serif;
+  }
+  li:hover {
+    color: blue;
+    cursor: pointer;
   }
   button {
     padding: 8px 10px 8px 10px;
@@ -34,11 +30,22 @@
     display: flex;
     align-items: center;
   }
+  button:hover {
+    background-color: #2a428d;
+    color: white;
+  }
   .google_icon {
     width: 30px;
     padding-right: 10px;
   }
 }
+
+.nav_list {
+  @include displayFlex;
+  list-style: none;
+  align-items: center;
+}
+
 .header_bottom {
   @include displayFlex;
   padding-top: 90px;
@@ -46,12 +53,13 @@
     display: flex;
     flex-direction: column;
   }
-  h2 {
-    width: 90%;
-    font-size: 45px;
-    padding-bottom: 20px;
-    color :#795548
-  }
+}
+
+h2 {
+  width: 90%;
+  font-size: 45px;
+  padding-bottom: 20px;
+  color :#795548
 }
 
 .p_header_bottom {
@@ -61,6 +69,7 @@
   line-height: 35px;
   padding-bottom: 15px;
 }
+
 .header_img {
   width: 700px;
 }
@@ -77,7 +86,75 @@
   position: relative;
   margin-bottom: 20px;
 }
+
+.button_header_bottom:hover {
+  background-color: blue;
+}
+
+.header_bottom_icon {
+  @include header_bottom_icon;
+}
+
 .or {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.p_emailAddres:hover {
+  color:blue;
+}
+
+.arrow {
+  width: 30px;
+}
+
+.menu_burger {
+  display: none;
+}
+
+.header_img_responsive {
+  display: none;
+}
+
+@media screen and (max-width: $breackpoint) {
+  .container {
+    width: 100%;
+  }
+  .menu_burger {
+    display: block;
+    text-align: right;
+    margin-right: 10px;
+  }
+  .nav_list {
+    display: none;
+  }
+  .header_img {
+    display: none;
+  }
+  h2 {
+    text-align: center;
+    width: 100%;
+  }
+  .p_header_bottom {
+    text-align: center;
+  }
+  .header_bottom_text {
+    align-items: center;
+  }
+  .header_top_logo {
+    padding: 10px;
+  }
+  .buttons {
+    text-align: center;
+  }
+  .button_header_bottom {
+    display: flex;
+    margin: 0px;
+  }
+  .or {
+    line-height: 35px;
+  }
+  .p_emailAddres {
+    padding-top: 15px;
+  }
 }

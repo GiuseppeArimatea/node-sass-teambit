@@ -1,9 +1,8 @@
-.container {
-  width: 65%;
-  margin: 0 auto;
+img {
+  width: 25px;
 }
 
-.flex {
+.header_top {
   border-bottom: 1px solid #ccc9c9;
   display: flex;
   flex-direction: row;
@@ -12,28 +11,22 @@
   align-items: center;
 }
 
-.flex .header_top_logo {
+.header_top .header_top_logo {
   width: 150px;
 }
 
-.flex .nav_list {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  align-items: center;
-}
-
-.flex img {
-  width: 25px;
-}
-
-.flex li {
+.header_top li {
   color: black;
   padding-left: 45px;
   font-family: "Bree Serif", serif;
 }
 
-.flex button {
+.header_top li:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+.header_top button {
   padding: 8px 10px 8px 10px;
   border-radius: 10px;
   border: 1px solid #10104f;
@@ -42,9 +35,21 @@
   align-items: center;
 }
 
-.flex .google_icon {
+.header_top button:hover {
+  background-color: #2a428d;
+  color: white;
+}
+
+.header_top .google_icon {
   width: 30px;
   padding-right: 10px;
+}
+
+.nav_list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
 }
 
 .header_bottom {
@@ -58,7 +63,7 @@
   flex-direction: column;
 }
 
-.header_bottom h2 {
+h2 {
   width: 90%;
   font-size: 45px;
   padding-bottom: 20px;
@@ -90,9 +95,89 @@
   margin-bottom: 20px;
 }
 
+.button_header_bottom:hover {
+  background-color: blue;
+}
+
+.header_bottom_icon {
+  width: 30px;
+  padding-right: 10px;
+  vertical-align: sub;
+}
+
 .or {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.p_emailAddres:hover {
+  color: blue;
+}
+
+.arrow {
+  width: 30px;
+}
+
+.menu_burger {
+  display: none;
+}
+
+.header_img_responsive {
+  display: none;
+}
+
+@media screen and (max-width: 1058px) {
+  .container {
+    width: 100%;
+  }
+
+  .menu_burger {
+    display: block;
+    text-align: right;
+    margin-right: 10px;
+  }
+
+  .nav_list {
+    display: none;
+  }
+
+  .header_img {
+    display: none;
+  }
+
+  h2 {
+    text-align: center;
+    width: 100%;
+  }
+
+  .p_header_bottom {
+    text-align: center;
+  }
+
+  .header_bottom_text {
+    align-items: center;
+  }
+
+  .header_top_logo {
+    padding: 10px;
+  }
+
+  .buttons {
+    text-align: center;
+  }
+
+  .button_header_bottom {
+    display: flex;
+    margin: 0px;
+  }
+
+  .or {
+    line-height: 35px;
+  }
+
+  .p_emailAddres {
+    padding-top: 15px;
+  }
 }
 
 * {
@@ -100,5 +185,10 @@
   padding: 0;
   margin: 0;
   font-family: "Bree Serif", serif;
+}
+
+.container {
+  width: 65%;
+  margin: 0 auto;
 }
 
